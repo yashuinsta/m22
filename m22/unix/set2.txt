@@ -1,0 +1,11 @@
+echo "Enter the salary:"
+read salary
+if [ $salary -lt 15000 ]; then
+hra=$((salary * 15 / 100))
+da=$((salary * 90 / 100))
+else
+hra=500
+da=$((salary * 98 / 100))
+fi
+answer=$((salary + hra + da))
+echo "Answer: $answer"
